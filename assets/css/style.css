@@ -106,11 +106,7 @@ h2.offer {
   font-size: 48px;
   color: var(--primary-main-color);
 }
-.line {
-  width: 100%;
-  height: 50px;
-  background-color: var(--orange-color);
-}
+
 .bg-img {
   border-radius: 50%;
   width: 400px;
@@ -198,6 +194,7 @@ h2.offer {
   padding: 20px 50px;
   border-radius: 16px;
   background-color: var(--primary-main-color);
+  color: var(--back-ground-color);
 }
 form {
   width: 60%;
@@ -298,4 +295,249 @@ ul li {
 }
 .contact-info li i {
   color: var(--orange-color);
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 20px;
+  }
+  .header-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .logo img {
+    width: 100px;
+  }
+
+  .header-container .btn {
+    font-size: 11px;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    height: 100%;
+    padding-bottom: 30px;
+  }
+  .section-text {
+    text-align: center;
+  }
+  .section-img img.card-images {
+    width: 300px;
+  }
+  .card-container h2,
+  .card-container h3,
+  h2.offer span {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+
+  .bg-img {
+    display: none;
+  }
+  .fet-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+  }
+  .message-box {
+    width: 100%;
+    height: auto;
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }
+  .section-container {
+    grid-template-columns: 1fr;
+  }
+  .ctn {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-logo img {
+    width: 150px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+  .header-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .header-container .btn {
+    font-size: 11px;
+  }
+  .section-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+    height: 100%;
+    padding-bottom: 30px;
+  }
+  .section-img img.card-images {
+    width: 500px;
+  }
+  .section-text {
+    text-align: center;
+  }
+  .card-container h2,
+  .card-container h3,
+  h2.offer span {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+
+  .bg-img {
+    display: none;
+  }
+  .fet-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .message-box {
+    width: 100%;
+    height: auto;
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }
+  .section-container {
+    grid-template-columns: 1fr;
+  }
+  .ctn {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+  }
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-logo img {
+    width: 150px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 20px;
+  }
+  .header-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .header-container .btn {
+    font-size: 11px;
+  }
+  .section-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-container {
+    height: 100%;
+  }
+  .section-img img.card-images {
+    width: 500px;
+  }
+  .section-text {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .card-container h2,
+  .card-container h3,
+  h2.offer span {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+
+  .bg-img {
+    display: none;
+  }
+  .fet-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    place-items: center;
+  }
+  .message-box {
+    width: 100%;
+    height: auto;
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }
+  .section-container {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .footer-logo img {
+    width: 150px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    padding: 20px 60px;
+  }
+  .header-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .header-container .btn {
+    font-size: 11px;
+  }
+  .section-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-container {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  .fet-card {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    place-items: center;
+  }
+  .section-img img.card-images {
+    width: 500px;
+  }
+  .section-text {
+    text-align: center;
+  }
+  .bg-img img {
+    width: 300px;
+  }
+  form {
+    width: 70%;
+  }
+
+  .footer-logo img {
+    width: 150px;
+  }
 }
