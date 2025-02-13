@@ -38,7 +38,7 @@ header {
   border-radius: 0px 0px 50px 50px;
 }
 .card-container {
-  background-color: var(--back-ground-color);
+  background-color: var(--primary-main-color);
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -49,13 +49,14 @@ header {
 }
 .card-container h2 {
   font-size: 32px;
-  color: var(--primary-main-color);
+  color: var(--back-ground-color);
 }
 .section-img img.card-images {
-  width: 500px;
+  width: 600px;
+  padding-left: 50px;
 }
 .card-container h3 {
-  color: var(--orange-color);
+  color: var(--back-ground-color);
   font-size: 42px;
   font-weight: 400;
 }
@@ -66,7 +67,7 @@ h2.offer {
   font-size: 32px;
 }
 .offer span {
-  color: var(--orange-color);
+  color: var(--secondary-main-color);
   font-size: 42px;
   font-weight: 800;
 }
