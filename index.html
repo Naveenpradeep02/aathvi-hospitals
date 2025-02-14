@@ -167,12 +167,96 @@
           <form method="post" action="form" name="contact-form">
             <h4>Register Today and save your health now!</h4>
             <div class="form-container">
-              <input type="text" name="your-name" placeholder="Name" />
-              <input type="text" name="email" placeholder="@email" />
-              <input type="number" name="phone" placeholder="phone" />
-              <input type="number" name="phone" placeholder="Age" />
+              <div class="input-box">
+                <input
+                  required
+                  type="text"
+                  name="First-name"
+                  placeholder="First name"
+                />
+                <input type="text" name="Last-name" placeholder="Last name" />
+                <input
+                  type="text"
+                  name="uhidno"
+                  placeholder="UHID No. (If Existing Patient)"
+                />
+                <input required type="date" placeholder="Date of Birth" />
+
+                <div class="gender">
+                  <label>
+                    <input type="radio" name="gender" value="male" /> Male
+                  </label>
+                  <label>
+                    <input type="radio" name="gender" value="female" /> Female
+                  </label>
+                  <label>
+                    <input type="radio" name="gender" value="other" /> Other
+                  </label>
+                </div>
+                <input
+                  type="text"
+                  name="Organizationcare"
+                  placeholder="Organization / In care of
+                "
+                />
+              </div>
+
+              <textarea
+                name="address1"
+                id="address1"
+                class="addres"
+                placeholder="Address1"
+              ></textarea>
+              <textarea
+                name="address2"
+                id="address2"
+                class="addres"
+                placeholder="Address2"
+              ></textarea>
+              <div class="input-box">
+                <input type="text" name="City" placeholder="City" />
+                <input type="text" name="State" placeholder="State" />
+                <input
+                  type="number"
+                  name="postal code"
+                  placeholder="postal code"
+                />
+                <input type="text" name="Country" placeholder="Country" />
+              </div>
+              <div class="input-box">
+                <input
+                  required
+                  type="number"
+                  name="phone"
+                  placeholder="phone"
+                />
+                <div class="gender">
+                  <label for="whatsapp">Whatsapp enabled: Yes/No </label>
+                  <select
+                    name="whatsapp"
+                    id="whatsapp"
+                    value="Whatsapp enabled: Yes/No
+              "
+                  >
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+
+                <input required type="text" name="email" placeholder="@email" />
+              </div>
               <div class="message">
                 <textarea placeholder="Enter your message..."></textarea>
+              </div>
+              <div class="terms">
+                <label for="terms">
+                  <input type="checkbox" required name="terms" id="terms" />I
+                  hereby confirm that I do not possess any government-issued
+                  health card (e.g., BSKY, Ayushman Bharat) or a Aathvi card. I
+                  also give consent to being contacted by Aathvi Hospital
+                  representatives in the provided contact number if necessary
+                  for further processing of this application</label
+                >
               </div>
 
               <button type="submit" class="btn">Submit</button>

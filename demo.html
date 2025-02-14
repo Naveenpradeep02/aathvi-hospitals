@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      form {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: auto;
+      }
+      label {
+        font-weight: bold;
+        display: block;
+        margin: 10px 0 5px;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .radio-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .submit-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .submit-btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="POST">
+      <h2>Patient Registration Form</h2>
+
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" required />
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" required />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label for="uhid">UHID No. (If Existing Patient)</label>
+      <input type="text" id="uhid" name="uhid" />
+
+      <label for="address1">Address Line 1</label>
+      <input type="text" id="address1" name="address1" required />
+
+      <label for="address2">Address Line 2</label>
+      <input type="text" id="address2" name="address2" />
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" required />
+
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" required />
+
+      <label for="postalCode">Postal Code</label>
+      <input type="text" id="postalCode" name="postalCode" required />
+
+      <label for="country">Country</label>
+      <input type="text" id="country" name="country" required />
+
+      <label for="organization">Organization / In Care Of</label>
+      <input type="text" id="organization" name="organization" />
+
+      <label for="designation">Designation</label>
+      <input type="text" id="designation" name="designation" />
+
+      <label for="phone">Phone/Mobile</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label>WhatsApp Enabled:</label>
+      <div class="radio-group">
+        <input
+          type="radio"
+          id="whatsappYes"
+          name="whatsapp"
+          value="Yes"
+          required
+        />
+        <label for="whatsappYes">Yes</label>
+        <input
+          type="radio"
+          id="whatsappNo"
+          name="whatsapp"
+          value="No"
+          required
+        />
+        <label for="whatsappNo">No</label>
+      </div>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <p>
+        <input type="checkbox" id="consent" name="consent" required />
+        <label for="consent"
+          >By submitting this application, I confirm that I do not possess any
+          government-issued health card (e.g., BSKY, Ayushman Bharat) or an
+          Aathvi card. I also consent to being contacted by Aathvi Hospital
+          representatives for further processing.</label
+        >
+      </p>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </body>
+</html>

@@ -197,7 +197,7 @@ h2.offer {
   color: var(--back-ground-color);
 }
 form {
-  width: 60%;
+  width: 80%;
   background-color: var(--back-ground-color);
   box-shadow: 0 0 16px #c8c7c7;
   padding: 24px;
@@ -213,16 +213,51 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
+.gender {
+  display: flex;
+  gap: 20px;
+}
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-main-color);
+}
+input[type="radio"] {
+  margin: 0px auto;
+}
 input,
-textarea {
+textarea,
+.gender {
   padding: 15px 18px;
   border-radius: 10px;
   background-color: var(--input-color);
   border: 1px solid #fff;
   margin-bottom: 20px;
+  outline: none;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--secondary-main-color);
 }
 input {
   width: 100%;
+}
+
+input[type="checkbox"] {
+  width: fit-content;
+  margin-right: 20px;
+}
+.terms {
+  margin-bottom: 20px;
+}
+.input-box {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.addres {
+  height: 80px;
 }
 textarea {
   width: 100%;
@@ -355,6 +390,9 @@ ul li {
   form {
     width: 100%;
   }
+  .input-box {
+    grid-template-columns: 1fr;
+  }
   .footer-container {
     grid-template-columns: 1fr;
   }
@@ -423,6 +461,9 @@ ul li {
 
   form {
     width: 100%;
+  }
+  .input-box {
+    grid-template-columns: 1fr;
   }
   .footer-container {
     grid-template-columns: 1fr 1fr;
